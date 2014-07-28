@@ -5,18 +5,13 @@
     <meta charset="UTF-8">
     <title>Image-Video</title>
      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
     <link type="text/css" rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
 <div class="container">
     <div class="header">
-        <p>I think therefore I am</p>
+        <p>Please click pink picture</p>
     </div>
     <!-- End header-->
     <div class="content">
@@ -29,9 +24,36 @@
                 <li><img src="image/color/pnk.gif" alt="pink" id="pink"></li>
                 <li><img src="image/color/grn.gif" alt="green"></li>
                 <li><img src="image/color/ygr.gif" alt="ygreen"></li>
-                <li><img src="image/color/gry.gif" alt="gray"></li>
-                <li><img src="image/color/red.gif" alt="red"></li>
+
             </ul>
+
+            <ul class="player">
+                <li data-src="audio/AmazingLee.mp3">AmazingLee</li>
+                <li data-src="audio/EqueKenox.mp3">Eque Kenox</li>
+            </ul>
+        </div>
+        <div class="right" id="art">
+            <h2>Art Eliminator</h2>
+            <p>Pick your favorite piece of art through the process of elimination. Click on the pieces you like the least until you are left with a single one. Click on the last image to get some info</p>
+            <ul class="grid">
+                <li><img src="image/images/Hassum_Harrod_03_tn.jpg" alt="Hassum Harod's Summer Trees"></li>
+                <li><img src="image/images/LaVonne_LaRue_02_tn.jpg" alt="LaVonne LaRue's Mighty Duck"></li>
+                <li><img src="image/images/Lorenzo_Garcia_01_tn.jpg" alt="Lorenzo Garcia's The Dancer"></li>
+                <li><img src="image/images/Jennifer_Jerome_01_tn.jpg" alt="Jennifer Jerome's A day of Rest'"></li>
+                <li><img src="image/images/Constance_Smith_03_tn.jpg" alt="Constance Smith's Letterforms"></li>
+                <li><img src="image/images/LaVonne_LaRue_04_tn.jpg" alt="LaVonne LaRue's Flow"></li>
+                <li><img src="image/images/Lorenzo_Garcia_03_tn.jpg" alt="Lorenzo Garcia's Mother"></li>
+
+            </ul>
+            <div class="clear"></div>
+
+           <!-- <div class="loadImg">
+
+                <img class="load" src="image/loadImg/taquitosandcheese_tn.jpg">
+
+                <div class="overplay"></div>
+            </div>-->
+           
         </div>
     </div>
     <!-- End content-->
@@ -40,21 +62,8 @@
     </div>
     <!-- End footer-->
 </div>
-<script type="text/javascript">
+<script src="javaScrip/javascrip.js" >
 
-    // click on picture
-    //document.getElementById("pink").addEventListener("click",function(e){
-      //  alert("You cicked pink of picture")
-   // })
-
-    // Click pink of picture and others
-    document.getElementById('grid').addEventListener('click', function(e) {
-        console.log("Clicked inside the UL");
-    }, false);
-    document.getElementById('pink').addEventListener('click', function(e) {
-        console.log(e.toElement.alt);
-        e.stopPropagation();
-    }, false);
 </script>
 </body>
 </html>
