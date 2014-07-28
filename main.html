@@ -1,0 +1,60 @@
+<!--Author: Nguyen Hong Nhung-->
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Image-Video</title>
+     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <p>I think therefore I am</p>
+    </div>
+    <!-- End header-->
+    <div class="content">
+        <div class="left">
+            <ul id="gird">
+                <li><img src="image/color/ylw.gif" alt="yellow"></li>
+                <li><img src="image/color/org.gif" alt="orange"></li>
+                <li><img src="image/color/ppl.gif" alt="purple"></li>
+                <li><img src="image/color/blu.gif" alt="blue"></li>
+                <li><img src="image/color/pnk.gif" alt="pink" id="pink"></li>
+                <li><img src="image/color/grn.gif" alt="green"></li>
+                <li><img src="image/color/ygr.gif" alt="ygreen"></li>
+                <li><img src="image/color/gry.gif" alt="gray"></li>
+                <li><img src="image/color/red.gif" alt="red"></li>
+            </ul>
+        </div>
+    </div>
+    <!-- End content-->
+    <div class="footer">
+
+    </div>
+    <!-- End footer-->
+</div>
+<script type="text/javascript">
+
+    // click on picture
+    //document.getElementById("pink").addEventListener("click",function(e){
+      //  alert("You cicked pink of picture")
+   // })
+
+    // Click pink of picture and others
+    document.getElementById('grid').addEventListener('click', function(e) {
+        console.log("Clicked inside the UL");
+    }, false);
+    document.getElementById('pink').addEventListener('click', function(e) {
+        console.log(e.toElement.alt);
+        e.stopPropagation();
+    }, false);
+</script>
+</body>
+</html>
